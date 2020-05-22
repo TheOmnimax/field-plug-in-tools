@@ -45,17 +45,21 @@ function getMetaData () {
 }
 
 function getPluginParameter (param) {
-  for (const p of fieldProperties.PARAMETERS) {
-    const key = p.key
-    if (key == param) {
-      return p.value
-    }
-  }
+  const parameters = fieldProperties.PARAMETERS
+  if (parameters != null) {
+    for (const p of fieldProperties.PARAMETERS) {
+      const key = p.key
+      if (key == param) {
+        return p.value
+      } // End IF
+    } // End FOR
+  } // End IF
 }
 
 function goToNextField () {
   console.log('Skipped to next field')
 }
-
+/* global setFocus */
+setFocus()
 // document.body.classList.add('android-collect')
 // Above for testing only */
