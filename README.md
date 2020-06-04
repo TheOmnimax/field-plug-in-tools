@@ -16,8 +16,16 @@ When the setAnswer() function is called, then the developer console will say `Se
 
 ![](extras/images/testing.png)
 
-Make sure you update the "fieldProperties" object with information related to your field plug-in. For example, if this is going to be used in a _text_ field, change the `FIELDTYPE` to 'text'. You can also add and remove properties that are and are not related to your field plug-in. Check out the [API](https://github.com/surveycto/field-plug-in-resources/blob/master/docs/api-reference.md) to see which field properties are available for each field type.
+Make sure you update the "fieldProperties" object with information related to your field plug-in. For example, if this is going to be used in a _text_ field, change the `FIELDTYPE` to 'text'. You can also add and remove properties that are and are not related to your field plug-in. Check out the [field plug-in API](https://github.com/surveycto/field-plug-in-resources/blob/master/docs/api-reference.md) to see which field properties are available for each field type.
 
+Then, open the HTML file in a web browser, open the developer tools, and start testing!
 
+When you are ready to merge the commits into the *master* branch, make sure you delete the testing code. Also re-compress the files into a ZIP file so the ZIP does not have unnecessary comments.
 
-Then, open the HTML file in a web browser, open the developer tools, and start testing! Make sure you remove or comment-out the testing code before compressing the files into the field plug-in ZIP file.
+## Additional features
+
+You can add additional features to the test code as necessary. There are two commented-out examples at the bottom of the script file.
+
+**setFocus**: Uncomment this out if your script includes a setFocus() function, since that will be run when the field first appears.
+
+**document.body.classList.add('android-collect')**: If your script should act differently depending on the platform, uncomment this row to test how your script acts on that platform. For example, if you would like to test how the form acts in web forms, uncomment out this row, and change `android-collect` to `web-collect`. See the [field plug-in API](https://github.com/surveycto/field-plug-in-resources/blob/master/docs/api-reference.md#user-content-css-classes) for more details.
