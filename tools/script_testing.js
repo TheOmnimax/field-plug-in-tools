@@ -1,9 +1,14 @@
 // Put this at the top of your script when testing in a web browser
 class Choice {
-  constructor (value, index, label, image) {
+  constructor (value, index, label, selected, image) {
     this.CHOICE_INDEX = index
     this.CHOICE_VALUE = value
     this.CHOICE_LABEL = label
+    if (selected) {
+      this.CHOICE_SELECTED = true
+    } else {
+      this.CHOICE_SELECTED = false
+    }
     this.CHOICE_IMAGE = image
   }
 }
@@ -59,7 +64,7 @@ function getPluginParameter (param) {
 function goToNextField () {
   console.log('Skipped to next field')
 }
-/* global setFocus */
-setFocus()
-// document.body.classList.add('android-collect')
+
+// setFocus() // Use this if your script includes a setFocus() function
+// document.body.classList.add('android-collect') //
 // Above for testing only */
