@@ -24,7 +24,7 @@ When you are ready to merge the commits into the *master* branch, make sure you 
 
 ## Additional features
 
-You can add additional features to the test code as necessary. There are two commented-out examples at the bottom of the script file.
+You can add additional features to the test code as necessary. There are two [commented-out](https://www.yourdictionary.com/comment-out) examples at the bottom of the script file.
 
 **setFocus**: Uncomment this out if your script includes a setFocus() function, since that will be run when the field first appears.
 
