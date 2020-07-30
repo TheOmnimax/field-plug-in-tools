@@ -2,7 +2,7 @@
 class Choice {
   constructor (value, index, label, selected, image) {
     this.CHOICE_INDEX = index
-    this.CHOICE_VALUE = value
+    this.CHOICE_VALUE = String(value)
     this.CHOICE_LABEL = label
     if (selected) {
       this.CHOICE_SELECTED = true
