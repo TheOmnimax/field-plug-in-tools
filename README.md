@@ -1,6 +1,6 @@
 # Field plug-in tools
 
-This is code you can add to field plug-ins so you can test them in a web browser before testing them your the SurveyCTO server.
+This is code you can add to field plug-ins so you can test them in a web browser before testing them your the SurveyCTO server. To learn more, check out our [guide to creating field plug-ins](https://support.surveycto.com/hc/en-us/articles/360052426933-Guide-to-creating-field-plug-ins).
 
 ## How to use
 
