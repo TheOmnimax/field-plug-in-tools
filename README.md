@@ -4,7 +4,7 @@ This is code you can add to field plug-ins so you can test them in a web browser
 
 ## How to use
 
-Simply add the [JavaScript code](/blob/master/tools/script_testing.js) to the top of your JavaScript script, and the [HTML tags](/blob/master/tools/template_testing.html) to the top of your HTML markup.
+Simply add the [JavaScript code](/tools/script_testing.js) to the top of your JavaScript script, and the [HTML tags](/tools/template_testing.html) to the top of your HTML markup.
 
 If you are using additional JavaScript files, add links to them as well:
 
